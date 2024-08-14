@@ -1,6 +1,6 @@
 {
   "name": "version-mark",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "A version marking tool suitable for Web projects",
   "keywords": [
     "git",
@@ -18,7 +18,7 @@
   "packageManager": "pnpm@9.5.0",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/a145789/version-mark"
+    "url": "git+https://github.com/a145789/version-mark.git"
   },
   "bugs": "https://github.com/a145789/version-mark/issues",
   "main": "dist/index.js",
