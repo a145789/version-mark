@@ -1,14 +1,24 @@
+
 <h1 align="center">Version Mark</h1>
 
-## 介绍
+<p align="center">
+  <span>English</span> | 
+  <a href="https://github.com/a145789/version-mark/blob/main/README.zh-CN.md">中文</a>
+</p>
+<p align="center">
+  <a href="https://www.npmjs.com/package/version-mark" target="_blank" rel="noopener noreferrer"><img src="https://badgen.net/npm/dm/version-mark" alt="NPM Version" /></a>
+  <a href="https://github.com/a145789/version-mark/blob/main/LICENCE" target="_blank" rel="noopener noreferrer"><img src="https://badgen.net/github/license/a145789/version-mark" alt="License" /></a>
+</p>
 
-一个适用于 `Web` 项目的版本标记工具，对前后台项目更友好的 `Git` 版本管理。
+## Introduction
 
-## 功能
+A version marking tool suitable for `Web` projects, offering more friendly `Git` version management for both frontend and backend projects.
 
-- 检测工作目录中的更改
-  - 如果存在未提交的更改，将只提供预发布版本选项。
-  - 如果当前更改都已提交，将提供正式版和预发布版本选项。
+## Features
+
+- Detect changes in the working directory
+  - If there are uncommitted changes, only the pre-release version option will be provided.
+  - If all current changes are committed, options for both the formal version and pre-release version will be provided.
     - `patch`: `0.0.1`
     - `minor`: `0.1.0`
     - `major`: `1.0.0`
@@ -16,10 +26,10 @@
     - `preminor`: `0.1.0-0`
     - `premajor`: `1.0.0-0`
 
-- 自动更新`package.json`中的版本号。
-- 如果是正式版本，将自动创建并向远程仓库推送新的git标签。
+- Automatically update the version number in `package.json`.
+- If it's a formal version, a new git tag will be automatically created and pushed to the remote repository.
 
-## 安装
+## Installation
 
 ```bash
 pnpm add version-mark -D
@@ -27,11 +37,23 @@ yarn add version-mark -D
 npm install version-mark -D
 ```
 
-## 使用
+## Usage
 
+```json
+{
+  "scripts": {
+    "version": "vmark",
+    "build": "pnpm run build && vmark"
+  }
+}
+```
 
+```bash
+pnpm run version
+yarn run build
+```
 
-### 示例输出
+### Example Output
 
 ```text
 current version: v1.0.0
@@ -44,9 +66,10 @@ current version: v1.0.0
   o v2.0.0-202410121365
   o Skip
 ```
-用户选择后，`package.json`将被更新，并且（对于正式版本）一个新的git标签将被创建和推送。
 
-## 注意事项
+After the user makes a selection, the `package.json` will be updated, and for formal versions, a new git tag will be created and pushed.
 
-- 确保您的`package.json`文件位于当前工作目录中。
-- 确保您的git仓库已配置远程仓库。
+## Notes
+
+- Ensure that your `package.json` file is located in the current working directory.
+- Make sure your git repository is configured with a remote repository.
