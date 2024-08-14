@@ -5,7 +5,10 @@
   },
   "linter": {
     "enabled": true,
-    "ignore": ["./packages/modern/**/*", "node_modules"],
+    "ignore": [
+      "dist",
+      "node_modules"
+    ],
     "rules": {
       "recommended": true,
       "correctness": {
@@ -18,7 +21,10 @@
   },
   "formatter": {
     "indentStyle": "space",
-    "ignore": ["./packages/modern/**/*", "node_modules"]
+    "ignore": [
+      "dist",
+      "node_modules"
+    ]
   },
   "javascript": {
     "formatter": {

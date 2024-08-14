@@ -37,13 +37,16 @@
   ],
   "scripts": {
     "dev": "tsup --watch",
-    "build": "tsup"
+    "build": "tsup",
+    "release": "pnpm run build && vr release",
+    "lint": "npx @biomejs/biome lint ."
   },
   "devDependencies": {
     "@biomejs/biome": "1.8.3",
     "@types/fs-extra": "^11.0.4",
     "@types/node": "^22.2.0",
     "@types/semver": "^7.5.8",
+    "@varlet/release": "^0.2.11",
     "tsup": "^8.2.4",
     "typescript": "^5.5.4"
   },
