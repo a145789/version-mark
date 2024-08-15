@@ -1,4 +1,4 @@
-#!/bin/env node
+#!/usr/bin/env node
 
 import { cli } from "cleye"
 import { description, version } from "../package.json"
