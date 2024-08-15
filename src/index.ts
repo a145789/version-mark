@@ -55,7 +55,7 @@ export async function markVersion(options: MarkVersionOptions) {
 
   intro(`${pc.gray("current version:")} ${pc.green(`v${currentVersion}`)}`)
 
-  let selectOptions: {
+  const selectOptions: {
     value: string
     label: string
     hint?: string
@@ -66,7 +66,7 @@ export async function markVersion(options: MarkVersionOptions) {
     const version =
       inc(currentVersion, "prerelease", `pre.${timestampToTime()}`, false) ??
       currentVersion
-    selectOptions = [{ value: version, label: `v${version}` }]
+    selectOptions.push({ value: version, label: `v${version}` })
   } else {
     for (const type of releaseTypes) {
       const time = timestampToTime()
@@ -75,8 +75,9 @@ export async function markVersion(options: MarkVersionOptions) {
 
       selectOptions.push({ value: version, label: `v${version}` })
     }
-    selectOptions.push({ value: "skip", label: "Skip", hint: "Skip this step" })
   }
+
+  selectOptions.push({ value: "skip", label: "Skip", hint: "Skip this step" })
 
   const newVersion = (await select({
     message: "Pick a version",
@@ -111,5 +112,6 @@ export async function markVersion(options: MarkVersionOptions) {
     await execa("git", ["push", "origin", `v${newVersion}`])
   }
 
-  s.stop(`new version ${pc.green(newVersion)}`)
+  s.stop("The tag has been successfully pushed to Git")
+  outro(`new version ${pc.green(newVersion)}`)
 }

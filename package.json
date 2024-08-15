@@ -38,6 +38,7 @@
   "scripts": {
     "dev": "tsup --watch",
     "build": "tsup",
+    "vmark": "node dist/cli.js",
     "release": "pnpm run build && vr release",
     "lint": "npx @biomejs/biome lint ."
   },

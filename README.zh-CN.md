@@ -41,8 +41,8 @@ npm install version-mark -D
 ```json
 {
   "scripts": {
-    "version": "vmark",
-    "build": "pnpm run build && vmark"
+    "vmark": "vmark",
+    "build": "vmark && pnpm run build"
   }
 }
 ```
