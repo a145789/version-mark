@@ -1,6 +1,6 @@
 {
   "name": "version-mark",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "A version marking tool suitable for Web projects",
   "keywords": [
     "git",

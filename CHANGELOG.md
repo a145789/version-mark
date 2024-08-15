@@ -1,4 +1,13 @@
-## 0.0.2 (2024-08-14)
+## [0.0.3](https://github.com/a145789/version-mark/compare/v0.0.2...v0.0.3) (2024-08-15)
+
+
+### Bug Fixes
+
+* 修复无法通过脚本执行 ([3f4e63c](https://github.com/a145789/version-mark/commit/3f4e63c53e1f57bd637a28422bf555c60809bc88))
+
+
+
+## [0.0.2](https://github.com/a145789/version-mark/compare/72af55b098f4cbf6a850d098b024e5c178bff9bc...v0.0.2) (2024-08-14)
 
 
 ### Bug Fixes
