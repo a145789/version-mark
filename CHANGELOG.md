@@ -1,3 +1,12 @@
+## [0.0.5](https://github.com/a145789/version-mark/compare/v0.0.4...v0.0.5) (2024-08-15)
+
+
+### Features
+
+* 工作区有未提交时仍可跳过标记版本 ([20279b1](https://github.com/a145789/version-mark/commit/20279b1b24bdc521cbaefb3e2446f0798028b156))
+
+
+
 ## [0.0.4](https://github.com/a145789/version-mark/compare/v0.0.3...v0.0.4) (2024-08-15)
 
 
