@@ -1,3 +1,12 @@
+## [0.0.4](https://github.com/a145789/version-mark/compare/v0.0.3...v0.0.4) (2024-08-15)
+
+
+### Features
+
+* **cli:** 更新cli脚本环境变量 ([2bc5e5f](https://github.com/a145789/version-mark/commit/2bc5e5fc6c68e7b80feb31eb11c4d18b53e9f0d0))
+
+
+
 ## [0.0.3](https://github.com/a145789/version-mark/compare/v0.0.2...v0.0.3) (2024-08-15)
 
 
